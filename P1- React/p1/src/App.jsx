@@ -1,20 +1,6 @@
 
-import './App.css'
+import Login from "./Login"
 
-function App() {
-  
-  
-  return (
-    <section className='container'>
-      <h1>Disney!</h1>
-
-      <div className='card'>
-        <h1>Digite o seu e-mail para continuar</h1>
-      </div>
-
-    </section>
-    
-  )
+export default function App() {
+  return <Login />
 }
-
-export default App
