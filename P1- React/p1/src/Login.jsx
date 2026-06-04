@@ -8,18 +8,19 @@ export default function Login() {
   const [enviar, setEnviar] = useState(false)
 
 
-  useEffect(() => {
+ useEffect(() => {
 
-    if (enviar === true) {
-      console.log("Email:", email)
-      console.log("Senha:", senha)
-    }
+  if (enviar) {
+    console.log("Email:", email)
+    console.log("Senha:", senha)
+    setTimeout(() => setEnviar(false), 0)
+  }
 
-  }, [enviar])
+}, [enviar])
 
   return (
     <div className={styles.pagina}>
-        <h1 className={styles.logoTopo}>Disney+</h1>
+        <h1 className={styles.logoTipo}>Disney+</h1>
         
         <div className={styles.card}>
 
